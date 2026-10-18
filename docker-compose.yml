@@ -1,0 +1,8 @@
+services:
+  trazo:
+    build: .
+    image: trazo:latest
+    container_name: trazo
+    restart: unless-stopped
+    ports:
+      - "${TRAZO_PORT:-8085}:80"
