@@ -5,4 +5,4 @@ services:
     container_name: trazo
     restart: unless-stopped
     ports:
-      - "${TRAZO_PORT:-8085}:80"
+      - "${TRAZO_PORT:-9085}:80"
